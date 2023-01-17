@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12 oct. 2019 10:26:11 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="Professeur" table="professeur">
+        <id name="code" type="int">
+            <column name="code_prof" />
+            <generator class="assigned" />
+        </id>
+        <property name="nom" type="java.lang.String">
+            <column name="NOM_prof" />
+        </property>
+        <property name="prenom" type="java.lang.String">
+            <column name="PRENOM_prof" />
+        </property>
+        <property name="specialite" type="java.lang.String">
+            <column name="spicialite_prof" />
+        </property>
+       
+    </class>
+</hibernate-mapping>
